@@ -1,0 +1,9 @@
+@use "../../assets/sass/_variables.scss" as *;
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
