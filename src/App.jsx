@@ -21,7 +21,7 @@ const App = () => {
   return (
     <div className="App">
       <nav className="nav">
-        <h1>Search</h1>
+        <h1 className='nav__logo'>BrewDog</h1>
       </nav>
       <main className='mainSection'>
         <section className='mainSection__nav-bar'>

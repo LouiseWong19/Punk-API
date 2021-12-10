@@ -7,18 +7,35 @@
 }
 
 .App{
+  background-color: $color-mainBackground;
   .nav{
-    height: 100px;
+    display: flex;
+    align-items: center;
+    height: 120px;
+    background-color: $color-primary;
+    &__logo{
+      color: #028da7;
+      font-size: 48px;
+      margin-left: 20px;
+    }
   }
   .mainSection{
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
     &__nav-bar{
+      display: flex;
+      justify-content: center;
       height: 100px;
-      background: $color-navBackground;
+      background: $color-primary;
+      border-radius: 20px;
+      //border: 2px solid white;
+      margin: 10px 20px;
     }
     &__main{
       background-color: $color-mainBackground;
+      //border: 2px solid white;
+      margin: 5px 20px;
     }
   }
 }
@@ -30,7 +47,7 @@
     
       &__nav-bar{
       width: 30%;
-      height: auto;
+      height: 400px;
       }
       &__main{
       width: 70%;

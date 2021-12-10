@@ -2,4 +2,11 @@
 
 .search-box{
   color: black;
+  margin-top: 20px;
+  &__input{
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid $color-primary;
+    padding: 5px;
+  }
 }
