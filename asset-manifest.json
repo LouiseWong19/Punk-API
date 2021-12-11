@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/LouiseWong19/Punk-API/static/css/main.0b041b78.chunk.css",
+    "main.js": "/LouiseWong19/Punk-API/static/js/main.c90fbffb.chunk.js",
+    "main.js.map": "/LouiseWong19/Punk-API/static/js/main.c90fbffb.chunk.js.map",
+    "runtime-main.js": "/LouiseWong19/Punk-API/static/js/runtime-main.4cff339e.js",
+    "runtime-main.js.map": "/LouiseWong19/Punk-API/static/js/runtime-main.4cff339e.js.map",
+    "static/js/2.9aae312c.chunk.js": "/LouiseWong19/Punk-API/static/js/2.9aae312c.chunk.js",
+    "static/js/2.9aae312c.chunk.js.map": "/LouiseWong19/Punk-API/static/js/2.9aae312c.chunk.js.map",
+    "static/js/3.d24224c3.chunk.js": "/LouiseWong19/Punk-API/static/js/3.d24224c3.chunk.js",
+    "static/js/3.d24224c3.chunk.js.map": "/LouiseWong19/Punk-API/static/js/3.d24224c3.chunk.js.map",
+    "index.html": "/LouiseWong19/Punk-API/index.html",
+    "static/css/main.0b041b78.chunk.css.map": "/LouiseWong19/Punk-API/static/css/main.0b041b78.chunk.css.map",
+    "static/js/2.9aae312c.chunk.js.LICENSE.txt": "/LouiseWong19/Punk-API/static/js/2.9aae312c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4cff339e.js",
+    "static/js/2.9aae312c.chunk.js",
+    "static/css/main.0b041b78.chunk.css",
+    "static/js/main.c90fbffb.chunk.js"
+  ]
+}
