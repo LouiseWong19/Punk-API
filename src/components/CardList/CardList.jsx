@@ -8,8 +8,8 @@ const CardList = (props) =>{
 
   return (
     <div className = "cards">
-      {beerArray.map((item)=>{
-        return <Card name={item.name} image={item.image_url} ph={item.ph} abv={item.abv} srm={item.srm} detail={item.description}/>
+      {beerArray.map((item,index)=>{
+        return <Card key={"item" + index} name={item.name} image={item.image_url} ph={item.ph} abv={item.abv} srm={item.srm} detail={item.description}/>
       })}
     </div>
   )

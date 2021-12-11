@@ -4,7 +4,7 @@ import "./Card.scss";
 
 const Card = (props) =>{
   const {image, name, ph, abv, srm, detail} = props
-  console.log(image)
+  //console.log(image)
   
   return <div className="cardContainer">
     <div className="cardContainer__image">
