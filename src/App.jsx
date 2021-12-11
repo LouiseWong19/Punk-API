@@ -1,5 +1,4 @@
 import './App.scss';
-import data from "./data/data";
 import {useState,useEffect} from 'react';
 import Main from './containers/Main/Main';
 import NavBar from './containers/NavBar/NavBar';
@@ -7,9 +6,10 @@ import NavBar from './containers/NavBar/NavBar';
 
 
 const App = () => {
-  // // const {beerArray}
   const [beerDetail,setBeerDetail] = useState([]);
-
+  const [searchTerm, setSearchTerm] = useState("");
+  
+  // FETCH BEER DATA 
   useEffect(() => {
     const URL = `https://api.punkapi.com/v2/beers`;
     fetch(URL).then(response =>response.json()).then(item =>{
@@ -18,6 +18,19 @@ const App = () => {
       });
   }, []);
 
+
+  const handleInput = event =>{
+    const cleanInput = event.target.value.toLowerCase();
+    setSearchTerm(cleanInput);
+  }
+
+  const filteredBeer = beerDetail.filter(beer =>{
+    const beerNameLower = beer.name.toLowerCase();
+
+    return beerNameLower.includes(searchTerm)
+  })
+
+
   return (
     <div className="App">
       <nav className="nav">
@@ -25,10 +38,10 @@ const App = () => {
       </nav>
       <main className='mainSection'>
         <section className='mainSection__nav-bar'>
-          <NavBar />
+          <NavBar searchTerm={searchTerm} handleInput={handleInput}/>
         </section>
         <section className="mainSection__main">
-          <Main beerArray ={beerDetail}/>
+          <Main beerArray ={filteredBeer}/>
         </section>
       </main>
     </div>

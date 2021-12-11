@@ -1,9 +1,16 @@
-import React from 'react'
+import React, {useState} from 'react'
 import SearchBox from '../../components/SearchBox/SearchBox';
 
-const NavBar = () => {
+const NavBar = (props) => {
+  const {searchTerm,handleInput} = props
+
+
   return (
-    <SearchBox />
+    <div className='navBar'>
+      <h2>Search</h2>
+      <SearchBox searchTerm={searchTerm} handleInput={handleInput}/>
+      <h2>Filter</h2>
+    </div>
   )
 }
 
