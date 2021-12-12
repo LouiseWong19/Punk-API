@@ -21,6 +21,7 @@ const App = () => {
 
   const handleInput = event =>{
     const cleanInput = event.target.value.toLowerCase();
+    console.log(cleanInput)
     setSearchTerm(cleanInput);
   }
 

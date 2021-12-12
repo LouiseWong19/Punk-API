@@ -3,8 +3,8 @@ import React from "react";
 import "./Card.scss";
 
 const Card = (props) =>{
+  // details that we need
   const {image, name, ph, abv, srm, detail} = props
-  //console.log(image)
   
   return <div className="cardContainer">
     <div className="cardContainer__image">
